@@ -3,8 +3,7 @@ function login() {
     const password = document.getElementById("password").value;
     
     if (userid === "admin" && password === "admin") {
-        document.getElementById("login-container").style.display = "none";
-        document.getElementById("currency-converter-container").style.display = "block";
+        window.open("./currency_converter.html","_top");
     } else {
         alert("Error: Incorrect User ID or Password");
     }
